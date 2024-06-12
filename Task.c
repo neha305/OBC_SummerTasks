@@ -36,8 +36,7 @@ int main(){
    		printf("%s\n", val);
    		
 	} else {
-		//parent, write something to file
-		//int fd = open("TaskFile.txt", O_CREAT, ... /* mode_t mode */ );
+		//parent, write text to file
 		
 		if (lseek(fd, 0, SEEK_END) < 0) {
   			printf("Lseek 1 error.");
